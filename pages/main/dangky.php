@@ -25,7 +25,7 @@
         </tr>
         <tr>
             <td>Email</td>
-            <td> <input type="text" size="50" name="email"></td>
+            <td> <input type="text" size="50" name="email"></td
         </tr>
         <tr>
             <td>Điện thoại</td>
