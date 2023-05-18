@@ -1,7 +1,11 @@
+
+<h3>Giỏ hàng 
 <?php
-    session_start();    
+  if(isset($_SESSION['dangky'])){
+    echo 'Xin chào '.'<span style="color:darkblue">'.$_SESSION['dangky'].'</span>';
+  } 
 ?>
-<h3>Giỏ hàng</h3>
+</h3>
 <?php
     if(isset($_SESSION['cart'])){
     }
@@ -55,11 +59,32 @@
     <td colspan="8">
       <p style="float:left">Tổng tiền:<?php echo number_format($tongtien,0,',','.').' '.'vnđ' ?></p>
       <p style="float:right"><a href="pages/main/themgiohang.php?xoatatca=1">Xóa tất cả</p>
+      <div style="clear:both";></div>
+
+      <!-- Nút đặt hàng -->
+      <?php 
+        if(isset($_SESSION['dangky'])){
+          ?>
+        <p><a href="index.php?quanly=thanhtoan">Đặt hàng</a></p>
+        <?php
+           }else{
+         ?>
+      <p><a href="index.php?quanly=dangky">Đăng ký để đặt hàng</a></p>
+      <?php
+        } 
+      ?>
+
+
+
+
+
+
+
     </td>
   </tr>
   <?php
   }else{
-  ?>
+  ?> 
   <tr>
     <td colspan="8"><p>Hiện tại giỏ hàng đang trống</p></td>
 

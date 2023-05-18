@@ -8,6 +8,8 @@
         $sql_dangky = mysqli_query($mysqli,"INSERT INTO tbl_dangky(tenkhachhang,email,diachi,matkhau,dienthoai) VALUE('".$tenkhachhang."','".$email."','".$diachi."','".$matkhau."','".$dienthoai."')");
         if($sql_dangky){
             echo '<p style="color:green"> Bạn đã đăng ký thành công! </p>';
+            $_SESSION['dangky'] = $tenkhachhang;
+            header('Location: index.php?quanly=giohang');
         }
     }
 ?>
@@ -40,7 +42,8 @@
             <td> <input type="password" size="50" name="matkhau"></td>
         </tr>
         <tr>
-            <td colspan="2"><input type="submit" name="dangky" value="Đăng ký"></td>
+            <td><input type="submit" name="dangky" value="Đăng ký"></td>
+            <td><a href="index.php?quanly=dangnhap">Đăng nhập</a></td>
         </tr>
     </table>
 </form>

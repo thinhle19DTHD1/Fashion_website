@@ -12,7 +12,7 @@
             header("Location: index.php");
         }else{
             echo '<script> alert("Tài khoản hoặc mật khẩu không đúng, vui lòng đăng nhập lại."); </script>';
-            header("Location: login.php");
+            // header("Location: login.php");
         }
     }
 ?>
@@ -58,5 +58,6 @@
             </table>
         </form>
     </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </body>
 </html>
