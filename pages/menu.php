@@ -36,4 +36,11 @@
                 } 
                 ?>
             </ul>
+
+            <form action="index.php?quanly=timkiem" method="POST">
+                <p>
+                    <input type="text" placeholder="Nhập tên sản phẩm cần tìm..." name="tukhoa"></input>
+                    <input type="submit" name="timkiem" value="Tìm kiếm">
+                </p>
+            </form>
 </div>
