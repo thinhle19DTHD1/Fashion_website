@@ -2,7 +2,7 @@
 <h3>Giỏ hàng 
 <?php
   if(isset($_SESSION['dangky'])){
-    echo 'Xin chào '.'<span style="color:darkblue">'.$_SESSION['dangky'].'</span>';
+    echo ': '.'<span style="color:darkblue">'.$_SESSION['dangky'].'</span>';
   } 
 ?>
 </h3>
@@ -65,7 +65,7 @@
       <?php 
         if(isset($_SESSION['dangky'])){
           ?>
-        <p><a href="index.php?quanly=thanhtoan">Đặt hàng</a></p>
+        <p><a href="pages/main/thanhtoan.php">Đặt hàng</a></p>
         <?php
            }else{
          ?>
