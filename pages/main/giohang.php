@@ -69,7 +69,7 @@
         <?php
            }else{
          ?>
-      <p><a href="index.php?quanly=dangky">Đăng ký để đặt hàng</a></p>
+      <p><a href="index.php?quanly=dangnhap">Đăng nhập để đặt hàng</a></p>
       <?php
         } 
       ?>

@@ -28,7 +28,10 @@
                         include("main/dangnhap.php");
                     }elseif ($tam =='timkiem'){
                         include("main/timkiem.php");
-                    }elseif ($tam =='thankyou'){
+                    }elseif ($tam =='dangnhap'){
+                        include("main/dangnhap.php");
+                    }
+                    elseif ($tam =='thankyou'){
                         include("main/thankyou.php");
                     }
                     else{

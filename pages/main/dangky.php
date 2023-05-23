@@ -46,8 +46,8 @@
             <td> <input type="password" size="50" name="matkhau"></td>
         </tr>
         <tr>
+            <td><a href="index.php?quanly=dangnhap">Tôi đã có tài khoản</a></td>  
             <td><input type="submit" name="dangky" value="Đăng ký"></td>
-            <td><a href="index.php?quanly=dangnhap">Đăng nhập</a></td>
         </tr>
     </table>
 </form>

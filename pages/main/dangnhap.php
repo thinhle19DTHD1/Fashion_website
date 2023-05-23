@@ -29,7 +29,9 @@
                 <td>Mật khẩu:</td>
                     <td><input type="password" size="50" name="password" placeholder="Mật khẩu..."></td>
                 </tr>
+                    <td><a href="index.php?quanly=dangky">Chưa có tài khoản</a></td>
                     <td colspan="2"><input type="submit" name="dangnhap" value="Đăng nhập"></td>
                 </tr>
+
             </table>
         </form>
