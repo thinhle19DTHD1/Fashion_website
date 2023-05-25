@@ -64,7 +64,7 @@ ul.list_menu {
     padding: 0;
     margin: 0;
     width: 60%;
-    list-style: none;
+    list-style: none;   
     margin: 0 auto;
     line-height: 27px;
 } 
@@ -82,13 +82,13 @@ ul.list_menu li {
     padding: 5px;
 }
 #main{
-    border: 1px solid #ff80ff;
+    border: 1px solid #ff80ff;  
     height: auto;
     width: 100%;
 }
 .sidebar {
     border: 1px solid #000;
-    height: 625px;
+    height: 808px;
     width: 20%;
     margin-top: 1px;
     margin-left: 1px;
