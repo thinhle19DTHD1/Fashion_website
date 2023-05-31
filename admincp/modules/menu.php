@@ -3,7 +3,7 @@
     <li><a href="index.php?action=quanlysp&query=them">Quản lý sản phẩm</a></li>
     <li><a href="index.php?action=quanlybaiviet&query=them">Quản lý bài viết</a></li>
     <li><a href="index.php?action=quanlydanhmucbaiviet&query=danhmucbaiviet">Quản lý danh mục bài viết</a></li> 
-    <li><a href="index.php?action=quanlydonhang&query=donhang">Quản lý đơn hàng</a></li> 
+    <li><a href="index.php?action=quanlydonhang&query=lietke">Quản lý đơn hàng</a></li> 
 
 </ul>   
 
