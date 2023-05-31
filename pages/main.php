@@ -30,9 +30,10 @@
                         include("main/timkiem.php");
                     }elseif ($tam =='dangnhap'){
                         include("main/dangnhap.php");
-                    }
-                    elseif ($tam =='thankyou'){
+                    }elseif ($tam =='thankyou'){
                         include("main/thankyou.php");
+                    }elseif ($tam =='doimatkhau'){
+                        include("main/doimatkhau.php");
                     }
                     else{
                         include("main/index.php");

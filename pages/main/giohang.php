@@ -17,8 +17,8 @@
     <th>Tên sản phẩm</th>
     <th>Ảnh sản phẩm</th>
     <th>Số lượng</th>
-    <th>Đơn giá</th>
-    <th>Thành tiền</th>
+    <th style="width:200px">Đơn giá</th>
+    <th style="width:200px">Thành tiền</th>
     <th>Quản lý</th>
 
 
