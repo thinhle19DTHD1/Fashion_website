@@ -10,7 +10,7 @@
         foreach($_SESSION['cart'] as $ket => $value){
             $id_sanpham = $value['id'];
             $soluong = $value['soluong'];
-            $insert_other_details = "INSERT INTO tbl_cart_details(id_sanpham,code_cart,soluong) VALUE ('".$id_sanpham."','".$code_other."','".$soluong."')";
+            $insert_other_details = "INSERT INTO tbl_cart_details(id_sanpham,code_cart,soluongmua) VALUE ('".$id_sanpham."','".$code_other."','".$soluong."')";
             mysqli_query($mysqli,$insert_other_details);
         }
     }
