@@ -23,7 +23,7 @@ while($row = mysqli_fetch_array($query_lietke_dh)){
     <td><?php echo $i ?></td>
     <td><?php echo $row['code_cart'] ?></td>
     <td><?php echo $row['tenkhachhang'] ?></td>
-    <td><?php echo $row['diachi'] ?></td>
+    <td><?php echo $row['diachi'] ?></td>  
     <td><?php echo $row['email'] ?></td>
     <td><?php echo $row['dienthoai'] ?></td>
     <td> 
