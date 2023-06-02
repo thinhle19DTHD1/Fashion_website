@@ -8,7 +8,7 @@
     <th>Id</th>
     <th>Mã đơn hàng</th>
     <th>Tên khách hàng</th>
-    <th>Địa chỉ</th>
+    <th>Địa chỉ giao hàng</th>
     <th>Email</th>
     <th>Số điện thoại</th>
     <th>Quản lý đơn hàng</th>

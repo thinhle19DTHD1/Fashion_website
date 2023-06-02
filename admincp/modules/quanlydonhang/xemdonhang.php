@@ -8,7 +8,7 @@
     <th>Id</th>
     <th>Mã đơn hàng</th>
     <th>Tên sản phẩm</th>
-    <th>Số lượng</th>
+    <th>Số lượng mua</th>
     <th>Đơn giá</th>
     <th>Thành tiền</th>
   </tr>
