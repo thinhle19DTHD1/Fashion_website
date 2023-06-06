@@ -30,9 +30,9 @@ while($row = mysqli_fetch_array($query_lietke_dh)){
     <td>
       <?php 
         if($row['cart_status']==1){
-          echo '<a style="color:green;text-decoration: none" href="modules/quanlydonhang/xuly.php?code='.$row['code_cart'].'">Finish !</a>';
+          echo '<a style="color:green;text-decoration: none" href="modules/quanlydonhang/xuly.php?code='.$row['code_cart'].'">Duyệt ngay !</a>';
         }else{
-          echo 'Done !';
+          echo 'Đã xong !';
         }
       ?>
     </td>
