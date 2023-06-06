@@ -21,23 +21,23 @@ while($row = mysqli_fetch_array($query_lietke_dh)){
     $tongtien += $thanhtien;
 
 ?>
-  <tr>
-    <td><?php echo $i ?></td>
-    <td><?php echo $row['code_cart'] ?></td>
-    <td><?php echo $row['tensanpham'] ?></td>
-    <td><?php echo $row['soluongmua'] ?></td>
-    <td><?php echo number_format($row['giasp'],0,',',',').'vnđ'  ?></td>
-    <td><?php echo number_format($thanhtien,0,',',',').'vnđ' ?></td>
-  </tr> 
-  <?php 
-}   
-  ?>
-  
-    <tr>
-        <td colspan="6">
-            <p>Tổng tiền : <?php echo number_format($tongtien,0,',',',').'vnđ' ?></p>    
-            <p><a href="#"> Đã xử lý</a></p>   
-        </td>
-    </tr>
+  <form method="POST">
+    <tr>  
+      <td><?php echo $i ?></td>
+      <td><?php echo $row['code_cart'] ?></td>
+      <td><?php echo $row['tensanpham'] ?></td>
+      <td><?php echo $row['soluongmua'] ?></td>
+      <td><?php echo number_format($row['giasp'],0,',',',').'vnđ'  ?></td>
+      <td><?php echo number_format($thanhtien,0,',',',').'vnđ' ?></td>
+    </tr> 
+    <?php 
+  }   
+    ?>
+      <tr>
+          <td colspan="6">
+              <p>Tổng tiền : <?php echo number_format($tongtien,0,',',',').'vnđ' ?></p>    
+          </td>
+      </tr>
+  </form>
 
 </table>

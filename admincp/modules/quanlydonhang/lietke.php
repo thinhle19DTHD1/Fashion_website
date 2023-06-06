@@ -11,6 +11,7 @@
     <th>Địa chỉ giao hàng</th>
     <th>Email</th>
     <th>Số điện thoại</th>
+    <th>Tình trạng</th>
     <th>Quản lý đơn hàng</th>
 
   </tr>
@@ -26,8 +27,17 @@ while($row = mysqli_fetch_array($query_lietke_dh)){
     <td><?php echo $row['diachi'] ?></td>  
     <td><?php echo $row['email'] ?></td>
     <td><?php echo $row['dienthoai'] ?></td>
+    <td>
+      <?php 
+        if($row['cart_status']==1){
+          echo '<a style="color:green;text-decoration: none" href="modules/quanlydonhang/xuly.php?code='.$row['code_cart'].'">Finish !</a>';
+        }else{
+          echo 'Done !';
+        }
+      ?>
+    </td>
     <td> 
-        <a href="index.php?action=donhang&query=xemdonhang&code=<?php echo $row['code_cart'];?>">Xem đơn hàng</a> |  
+        <a href="index.php?action=donhang&query=xemdonhang&code=<?php echo $row['code_cart'];?>">Xem đơn hàng</a>  
     </td>
 
   </tr> 
