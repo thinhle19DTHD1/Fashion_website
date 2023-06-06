@@ -14,7 +14,7 @@
     $query_pro = mysqli_query($mysqli,$sql_pro);
 
 ?>
-<h3>Sản phẩm mới nhất</h3>
+<h3 style="color:darkgreen">Sản phẩm mới nhất : </h3>
                 <ul class="product_list">
                     <?php
                         while($row = mysqli_fetch_array($query_pro)){
@@ -23,8 +23,8 @@
                         <a href="index.php?quanly=sanpham&id=<?php echo $row['id_sanpham'] ?>">
                             <img src="admincp/modules/quanlysp/uploads/<?php echo $row['hinhanh']?>">
                             <p class="title_product"><?php echo $row['tensanpham']?></p>
-                            <p class="price_product">giá: <?php echo number_format($row['giasp'],0,',','.').'vnđ'?></p>
-                            <p style="text-align: center;color:darkblue"><?php echo $row['tendanhmuc'] ?></p>
+                            <p class="price_product">Giá: <?php echo number_format($row['giasp'],0,',','.').' vnđ'?></p>
+                            <p style="text-align: center;color:darkslategray"><?php echo $row['tendanhmuc'] ?></p>
                         </a>
                     </li>
                     <?php 
@@ -64,7 +64,7 @@
                     $row_acount = mysqli_num_rows($sql_trang); 
                     $trang = ceil($row_acount/10);
                 ?>
-                <h3>Trang hiện tại: <?php echo $page ?>/<?php echo $trang?></h3>
+                <h3>Trang : <?php echo $page ?>/<?php echo $trang?></h3>
                     <ul class="list_trang">
                         <?php 
                             for($i=1;$i<=$trang;$i++){

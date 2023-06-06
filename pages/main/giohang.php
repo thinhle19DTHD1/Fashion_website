@@ -1,5 +1,5 @@
 
-<h3>Giỏ hàng 
+<h3 style="color:darkgreen">Giỏ hàng 
 <?php
   if(isset($_SESSION['dangky'])){
     echo ': '.'<span style="color:darkblue">'.$_SESSION['dangky'].'</span>';
